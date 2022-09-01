@@ -1,10 +1,26 @@
 import React from 'react';
 
-import { Container, ListGroup, ListGroupItem } from 'react-bootstrap';
+import {
+  Button,
+  Container,
+  FormControl,
+  InputGroup,
+  ListGroup,
+  ListGroupItem,
+} from 'react-bootstrap';
 
 const App: React.FC = () => {
   return (
     <Container>
+      <InputGroup className="m-3">
+        <FormControl placeholder="Todo" />
+        <InputGroup.Append>
+          <Button variant="secondary">
+            <i className="fas fa-plus mr-1"></i>
+            Adicionar
+          </Button>
+        </InputGroup.Append>
+      </InputGroup>
       <ListGroup variant="flush" className="m-2">
         <h3>Incompleto</h3>
         <ListGroupItem
