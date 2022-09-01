@@ -5,9 +5,9 @@ import {
   markIncompletoAction,
 } from './actionsTypes';
 
-export type markCompleteActionCreator = (todo: string) => markCompletoAction;
+export type markCompletoActionCreator = (todo: string) => markCompletoAction;
 
-export type markIncompleteActionCreator = (
+export type markIncompletoActionCreator = (
   todo: string,
 ) => markIncompletoAction;
 
